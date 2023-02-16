@@ -1,0 +1,27 @@
+from selenium.webdriver.common.by import By
+
+
+class AuthLocators:
+    AUTH_BTN_WITH_PASS = (By.XPATH, '//*[@id="standard_auth_btn"]')
+    AUTH_BTN_REG = (By.XPATH, '//*[@id="kc-register"]')
+    AUTH_REG_NAME_FIELD = (By.NAME, 'firstName')
+    AUTH_REG_LASTNAME_FIELD = (By.NAME, 'lastName')
+    AUTH_EMAIL_FIELD = (By.ID, 'address')
+    AUTH_PASSWORD = (By.ID, 'password')
+    AUTH_PASSWORD_FIELD_GOOGLE = (By.NAME, 'password')
+    AUTH_PASSWORD_CONFIRM =(By.ID, 'password-confirm')
+    AUTH_BIGBTN_REG = (By.XPATH, '//*[@id="page-right"]/div/div/div/form/button')
+    AUTH_TAB_LOGIN = (By.ID, 't-btn-tab-login')
+    AUTH_TAB_LS = (By.ID, 't-btn-tab-ls')
+    AUTH_TAB_PHONE = (By.ID, 't-btn-tab-phone')
+    AUTH_TAB_EMAIL = (By.ID, 't-btn-tab-mail')
+    AUTH_USERNAME_FIELD = (By.ID, 'username')
+    AUTH_BTN_LOGIN = (By.ID, 'kc-login')
+    AUTH_GET_CODE = (By.ID, 'otp_get_code')
+    AUTH_BTN_GOOGLE = (By.ID, 'oidc_google')
+    AUTH_EMAIL_FIELD2 = (By.ID, 'identifierId')
+    AUTH_BTN_NEXT = (By.XPATH, '//*[@id="identifierNext"]/div/button/span')
+    AUTH_BTN_PASS_NEXT = (By.XPATH, '//*[@id="passwordNext"]/div/button/div[3]')
+    AUTH_CHECKBOX = (By.XPATH, '//*[@id="page-right"]/div/div/div/form/div[3]/label/span[2]')
+    AUTH_BTN_LOGOUT = (By.ID, 'logout-btn')
+    AUTH_BTN_CONTINUE = (By.ID, 'reset')
